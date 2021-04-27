@@ -1,0 +1,19 @@
+#include<stdio.h>
+void main()
+{
+	int a,b,i,max,lcm;
+	printf("Enter any two number\n");
+	scanf("%d%d",&a,&b);
+	
+	max=a>b?a:b;
+	for(i=0;i<max;i++)
+	{
+		if (max%a==0 && max%b==0)
+		{
+			lcm=max;
+			break ;
+		}
+		max++;
+	}
+	printf("\nLCM Of the two numbers = %d",lcm);
+}
